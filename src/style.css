@@ -1,0 +1,80 @@
+/* General body styling for centering the form */
+body {
+    margin: 0;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    background-color: #f0f2f5; /* Light background color for the page */
+    font-family: 'Inter', sans-serif; /* Use Inter font, assuming it's linked in index.html */
+    padding: 20px; /* Add some padding around the form */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Styling for the form wrapper */
+.form-wrapper {
+    background-color: #ffffff; /* White background for the form */
+    padding: 40px; /* Internal padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 100%; /* Take full width of its container */
+    max-width: 600px; /* Max width for better readability on larger screens */
+    margin: auto; /* Fallback for horizontal centering, though flexbox handles it */
+}
+
+/* Style for the form title */
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+    font-size: 2rem; /* Larger title */
+}
+
+/* Custom styles for Bootstrap form controls */
+.form-control {
+    border-radius: 8px; /* Slightly more rounded corners for inputs */
+    padding: 12px 15px; /* More padding for better touch targets */
+    border: 1px solid #dee2e6;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #86b7fe; /* Blue border on focus */
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Blue glow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Custom styles for Bootstrap buttons */
+.btn-primary {
+    width: 100%; /* Make the button full width */
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, #007bff, #0056b3); /* Gradient background */
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Button shadow */
+    transition: all 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to right, #0056b3, #003d80);
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Checkbox styling */
+.form-check-input {
+    border-radius: 4px; /* Slightly rounded checkbox */
+}
+
+.form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
