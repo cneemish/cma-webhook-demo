@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@contentstack/management": "^1.23.1",
     "bootstrap": "^5.3.7",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0"
