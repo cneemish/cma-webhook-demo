@@ -8,7 +8,10 @@ router.post("/create-entry", async (req, res) => {
   const title = `${form.first_name} ${form.last_name}`.trim();
 
   const contentstackClient = contentstack.client({
-    authtoken: process.env.CONTENTSTACK_AUTHTOKEN,  });
+    authtoken: process.env.CONTENTSTACK_AUTHTOKEN,
+        //api_key: process.env.CONTENTSTACK_API_KEY,
+        //management_token: process.env.CONTENTSTACK_MANAGEMENT_TOKEN ,
+     });
 
   const stack = await contentstackClient.stack({
     api_key: process.env.CONTENTSTACK_API_KEY,
